@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: car-explorer
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm run start"
+    deploy:
+      npm:
+        install-dev-dependencies: true
